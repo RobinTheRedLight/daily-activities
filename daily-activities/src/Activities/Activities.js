@@ -6,11 +6,21 @@ import './Activities.css'
 
 const Activities = () => {
     const [items, setItem] = useState([]);
+    const [calVal, setCalVal] = useState([]);
+    const [brkVal, setBrkVal] = useState([]);
     useState(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setItem(data))
     }, 0);
+
+    const ShowTime = val => {
+        const newItem = [...calVal, val];
+        setCalVal(newItem);
+    }
+    const BreakTime = val => {
+        setBrkVal(val);
+    }
     return (
         <div className="total-activity">
             <div className='left-sec'>
@@ -18,13 +28,13 @@ const Activities = () => {
                 <div className="daily-act">
                     {
                         items.map(item =>
-                            <ActivityCard item={item} key={item.id}></ActivityCard>
+                            <ActivityCard item={item} ShowTime={ShowTime} key={item.id}></ActivityCard>
                         )
                     }
                 </div>
             </div>
             <div className="activity-count">
-                <ActivityCalculation></ActivityCalculation>
+                <ActivityCalculation calVal={calVal} BreakTime={BreakTime} brkVal={brkVal}></ActivityCalculation>
             </div>
         </div>
     );

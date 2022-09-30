@@ -33,6 +33,10 @@
     font-weight: 600;
 }
 
+.btn-time:hover {
+    background-color: aqua;
+}
+
 .Ex-time {
     background-color: dodgerblue;
     display: flex;
@@ -45,4 +49,8 @@
     width: 100%;
     padding: 1%;
     background-color: dodgerblue;
+}
+
+.btn-act:hover {
+    background-color: aqua;
 }
