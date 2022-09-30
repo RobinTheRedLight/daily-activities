@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ActivityCalculation.css'
 const ActivityCalculation = ({ calVal, BreakTime, brkVal }) => {
+    const newVal = localStorage.getItem('Number');
+    brkVal = newVal;
     let timeCal = 0;
     for (const timeVal of calVal) {
         timeCal = timeVal.item.time + timeCal;

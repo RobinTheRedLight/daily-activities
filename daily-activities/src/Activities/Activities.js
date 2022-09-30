@@ -20,6 +20,8 @@ const Activities = () => {
     }
     const BreakTime = val => {
         setBrkVal(val);
+        localStorage.setItem('Number', val);
+
     }
     return (
         <div className="total-activity">
