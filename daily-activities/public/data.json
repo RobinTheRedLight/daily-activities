@@ -1,0 +1,38 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Music",
+    "time": 30,
+    "img": "1.jpg"
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "name": "Study",
+    "time": 60,
+    "img": "2.jpg"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "name": "Hangout",
+    "time": 30,
+    "img": "4.jpg"
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "name": "Swimming",
+    "time": 40,
+    "img": "3.jpg"
+  },
+  {
+    "id": "02871edc-272b-4e20-bcc2-b32681213b3c",
+    "name": "Plantation",
+    "time": 10,
+    "img": "6.jpg"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "name": "Football",
+    "time": 45,
+    "img": "5.jpg"
+  }
+]
