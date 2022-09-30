@@ -1,0 +1,23 @@
+.details {
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+    height: 5em;
+    width: 85%;
+    border-radius: 50% 50% / 10% 10%;
+
+}
+
+.single-details {
+    margin-right: 14%;
+    padding: 5%;
+    color: white;
+}
+
+.time-container {
+    display: flex;
+}
+
+.time {
+    margin-right: 8%;
+}
