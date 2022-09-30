@@ -1,23 +1,46 @@
+.Calculation-body {
+    background-color: lightblue;
+    margin: 5%;
+}
+
 .details {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: dodgerblue;
     height: 5em;
-    width: 85%;
+    width: 100%;
     border-radius: 50% 50% / 10% 10%;
 
 }
 
 .single-details {
-    margin-right: 14%;
     padding: 5%;
     color: white;
 }
 
 .time-container {
     display: flex;
+    justify-content: space-between;
 }
 
-.time {
-    margin-right: 8%;
+.btn-time {
+    background-color: dodgerblue;
+    padding: 3%;
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.Ex-time {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.btn-act {
+    margin-top: 5%;
+    width: 100%;
+    padding: 1%;
+    background-color: dodgerblue;
 }

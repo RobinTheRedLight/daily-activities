@@ -3,10 +3,10 @@ import './ActivityCard.css'
 const ActivityCard = () => {
     return (
         <div className="activityCard">
-            <div class="card">
+            <div className="card">
                 <img src="1.jpg" alt="" />
                 <h1>Tailored Jeans</h1>
-                <p class="price">$19.99</p>
+                <p className="price">$19.99</p>
                 <p><button>Add to Cart</button></p>
             </div>
         </div>

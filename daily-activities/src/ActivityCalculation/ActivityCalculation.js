@@ -20,11 +20,33 @@ const ActivityCalculation = () => {
             </div>
             <h3>Add a Break</h3>
             <div className='time-container'>
-                <button className='time'>10m</button>
-                <button className='time'>20m</button>
-                <button className='time'>30m</button>
-                <button className='time'>40m</button>
+                <button className='btn-time'>10m</button>
+                <button className='btn-time'>20m</button>
+                <button className='btn-time'>30m</button>
+                <button className='btn-time'>40m</button>
             </div>
+            <h3>Activity Details</h3>
+            <div className="Ex-time">
+                <div className="Nam">
+                    <h4>Exercise Time</h4>
+                </div>
+                <div className="tim">
+                    <h4>200s</h4>
+                </div>
+            </div>
+            <div className="Ex-time">
+                <div className="Nam">
+                    <h4>Break Time</h4>
+                </div>
+                <div className="tim">
+                    <h4>200s</h4>
+                </div>
+            </div>
+
+            <button className='btn-act'>
+                <h3>Activity Completed</h3>
+            </button>
+
         </div>
     );
 };
