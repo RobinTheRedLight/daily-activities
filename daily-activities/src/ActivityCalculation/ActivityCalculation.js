@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
-import './ActivityCalculation.css'
+import './ActivityCalculation.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ActivityCalculation = ({ calVal, BreakTime, brkVal }) => {
     const newVal = localStorage.getItem('Number');
-    brkVal = newVal;
+    if (newVal) {
+        brkVal = newVal;
+    }
+    else {
+        brkVal = 0;
+    }
     let timeCal = 0;
     for (const timeVal of calVal) {
         timeCal = timeVal.item.time + timeCal;
     }
+    const notify = () => toast("Wow so easy!");
     return (
         <div className='Calculation-body'>
             <h2>Name : <span>Robin Mitra</span></h2>
@@ -34,7 +42,7 @@ const ActivityCalculation = ({ calVal, BreakTime, brkVal }) => {
             <h3>Activity Details</h3>
             <div className="Ex-time">
                 <div className="Nam">
-                    <h4>Exercise Time</h4>
+                    <h4>Activity Time</h4>
                 </div>
                 <div className="tim">
                     <h4>{timeCal}m</h4>
@@ -49,10 +57,10 @@ const ActivityCalculation = ({ calVal, BreakTime, brkVal }) => {
                 </div>
             </div>
 
-            <button className='btn-act'>
+            <button onClick={notify} className='btn-act'>
                 <h3>Activity Completed</h3>
             </button>
-
+            <ToastContainer />
         </div>
     );
 };
