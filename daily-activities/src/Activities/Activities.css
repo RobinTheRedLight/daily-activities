@@ -7,3 +7,37 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media only screen and (max-width: 1126px) {
+    .daily-act {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .total-activity {
+        display: grid;
+        grid-template-columns: 3.5fr 1.5fr;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .daily-act {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .total-activity {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    .daily-act {
+        display: block;
+    }
+
+    .total-activity {
+        display: block;
+    }
+}
